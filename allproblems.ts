@@ -71,3 +71,16 @@
   myCar.getInfo();
   myCar.getModel();
 }
+
+{
+  //Problem 5
+  function processValue(value: string | number): number {
+    if (typeof value === "string") {
+      return value.length;
+    } else {
+      return value * 2;
+    }
+  }
+
+  processValue(10);
+}
