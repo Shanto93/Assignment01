@@ -1,5 +1,4 @@
 {
-  //Problem 1
   function formatString(input: string, toUpper?: boolean): string {
     if (toUpper === true) {
       return input.toUpperCase();
@@ -14,7 +13,6 @@
 }
 
 {
-  //Problem 2
   function filterByRating(
     items: { title: string; rating: number }[]
   ): { title: string; rating: number }[] {
@@ -35,7 +33,6 @@
 }
 
 {
-  //Problem 3
   function concatenateArrays<T>(...arrays: T[][]): T[] {
     return arrays.reduce((acc, array) => acc.concat(array, []));
   }
@@ -44,7 +41,6 @@
 }
 
 {
-  //Problem 4
   class Vehicle {
     private _make: string;
     private _year: number;
@@ -73,7 +69,6 @@
 }
 
 {
-  //Problem 5
   function processValue(value: string | number): number {
     if (typeof value === "string") {
       return value.length;
@@ -86,7 +81,6 @@
 }
 
 {
-  //Problem 6
   interface Product {
     name: string;
     price: number;
@@ -115,7 +109,6 @@
 }
 
 {
-  //Problem 7
   enum Day {
     Monday,
     Tuesday,
@@ -138,7 +131,6 @@
 }
 
 {
-  //Problem 8
   async function squareAsync(n: number): Promise<number> {
     return new Promise((resolve, reject) => {
       if (n < 0) {
