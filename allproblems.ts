@@ -136,3 +136,21 @@
 
   getDayType(Day.Friday);
 }
+
+{
+  //Problem 8
+  async function squareAsync(n: number): Promise<number> {
+    return new Promise((resolve, reject) => {
+      if (n < 0) {
+        reject(new Error("Error: Negative number not allowed"));
+      } else {
+        setTimeout(() => {
+          resolve(n * n);
+        }, 1000);
+      }
+    });
+  }
+
+  squareAsync(4).then(console.log);
+  squareAsync(-3).catch(console.error);
+}
